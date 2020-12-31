@@ -1,0 +1,216 @@
+INSERT INTO Library (LNo, Name)
+VALUES('001','Peradeniya Library'),
+('002','Colombo Public Library'),
+('003','Lyceum Wattala Library'),
+('004','Royal College Library'),
+('005','NSBM GREEN UNIVERSITY Library'),
+('006','Atomic Energy Authority Library'),
+('007','National Library of Sri Lanka'),
+('008','School Library Maharagama'),
+('009','Central College Library'),
+('010','SLIIT Library')
+SELECT * FROM Library
+GO
+
+INSERT INTO LibraryLocation (LNo, Location)
+VALUES('001','Peradeniya'),
+('002','Colombo'),
+('003','Wattale'),
+('004','Colombo'),
+('005','Homagama'),
+('006','Colombo'),
+('007','Colombo'),
+('008','Maharagama'),
+('009','KattanKudy'),
+('010','Malabe')
+SELECT * FROM LibraryLocation
+GO
+
+INSERT INTO Academic (LNo, School, College, University)
+VALUES ('003','Lyceum Wattala','',''),
+('004','','Royal College',''),
+('005','','','NSBM GREEN UNIVERSITY'),
+('008','School Library Maharagama','',''),
+('009','','Central College Library',''),
+('010','','','SLIIT Library')
+SELECT * FROM Academic
+GO
+
+INSERT INTO Public(LNo, Details)
+VALUES('002','Colombo Public Library details'),
+('007','National Library of Sri Lanka details')
+SELECT * FROM Public
+GO
+
+INSERT INTO Special(LNo, Details)
+VALUES('001','Peradeniya Library details'),
+('006','Atomic Energy Authority details')
+SELECT * FROM Special
+GO
+
+
+
+INSERT INTO Employee(Emp_ID,NIC,Name,Gender,Contact_No,Salary,Address)
+VALUES ('100','200350310034','Jack','Male','0777515786','75000','89,Kuswala Raddolugama'),
+('101','200350412324','Emily','Female','0777231623','75000','32,Katunayke'),
+('102','199232123122','Dilishi','Female','0715432712','50000','19 B,Ampara'),
+('103','200123122789','Felix','Male','0760543212','67000','234 Trincomolee'),
+('104','200025678186','Larry','Male','0765316790','80000','128 Matale'),
+('105','199923542198','Sammy','Female','0735614289','50000','!90 Wattala Junction'),
+('106','188037651467','Jimmy','Male','0716254318','45000','293 Jaffna'),
+('107','199026356718','Timmothy','Male','0777651490','60000','124 strawberry lane Nuweraeliya'),
+('108','200225671976','Anthonia','Female','0751367819','70000','130, Devala road Kandy'),
+('109','209126775190','Jeffery','Male','0776540198','75000','124, Rubber road Katunayke')
+SELECT * FROM Employee
+GO
+
+INSERT INTO Emp_Qualification(Emp_ID,Details)
+VALUES('100'.'Majors in Cyber Law')
+('101',Majors in Software Engineering)
+('102'.'Studied in NSBM and did my degree on Business Managment'),
+('103',''),
+('104',''),
+('105',''),
+('106',''),
+('107',''),
+('108',''),
+('109','') 
+SELECT * FROM Emp_Qualification
+
+
+INSERT INTO Librarian
+('100',''),
+('103',''),
+
+
+INSERT INTO Director
+('101',''),
+('105',''),
+INSERT INTO Medical Librarian 
+('102',''),
+
+INSERT INTO Media Specialist
+('104',''),
+('107',''),
+INSERT INTO Assistant
+('108',''),
+INSERT INTO Library Aid
+('106',''),
+INSERT INTO Archivist
+('109',''),
+
+
+INSERT INTO Publsiher (Name, Address,Publsiher ID)
+VALUES('Stark','312 North Carolina','300'),
+('Clara','12 Sam street florida','301'),
+('Delora','38 Family Junction Pensilvania','302'),
+('Emilia','234 Jaffna Road, Jaffna','303'),
+('Madea','126 Stuart Road, Highlevel','304'),
+('Florence','45 North carolina','305'),
+('Redma','456 tranver street Matale','306),
+('Tresha','56, red meat shop street','307'),
+('Payton','345,vermont'.'308'),
+('Darwin','34 elmore street','309')
+SELECT * FROM Publisher 
+
+INSERT INTO Book(BISBNo,Availabilty,BName,Author,BPrice,Title,Year,PublsiherID)
+VALUES('100234',0,'To Kill a mockingbird','Harper Lee','2300','To Kill a mockingbird','300'),
+('100214',1,'Just Me','Jojo Moyes','1750','Just Me','301'),
+('100562',0,'Lord of the rings','J.R.R.Tolkein','2500','Lord of the rings','302'),
+('100764',0,'Pinnochio','Carlo Collodi','2000','Pinnochio','303'),
+('105679',1,'In Search of lost Time','Marcel Proust','3000','In Search Of lost Time','303'),
+('234686',1,'Ulysses','James Joyce','4000','Ulysses','304'),
+('456798'0,'The Great Gatsby','Scott Fitzgerald',''4500','The Great Gatsby','304'),
+('456789'0,'Moby Dick','Herman Melville','3000','Moby Dick','305),
+('451900'1,'War and Peace','Leo Tolstoy','2000','War and Peace','306'),
+('234576'0,'Hamlet','William Shakespeare','1500','Hamlet','307'),
+('567981'1,'The Odyssey','Homer','1200','The Odyssey','308'),
+('789764,'The Divine Comedy','Dante Alighieri','The Divine Comedy','309')
+SELECT * FROM Book
+
+INSERT INTO Memeber(IDCode,Address,ExpDate,Gender,Name,ContactNo,MemebrDate)
+VALUES('10001','','NULL','Female','Ariana','0777456790','NULL'),
+('10002','','NULL','Male','Dilan','0768926715','NULL'),
+('10003','','NULL','Male','Ajith','0777451826','NULL'),
+('10004','NULL','NULL','Female','Disney','07126359810','NULL'),
+('10005','','NULL','Female','Sheila','07126355410','NULL'),
+('10006','','NULL','Male','Malindu','07126323310','NULL'),
+('10007','NULL','NULL','Female','Shamima','0777259810','NULL'),
+('10008','','NULL','Female','Liza','0715278810','NULL'),
+('10009','NULL','NULL','Male','Donald','06421959810','NULL'),
+('10010','NULL','NULL','Female','Danthe','0777787610','NULL')
+SELECT * FROM Member
+
+
+INSERT INTO Student(IDCode,School)
+VALUES('10001','Lyceum International'),
+('10006','Royal College')
+SELECT * FROM Student
+INSERT INTO Undergraduate(IDCode,NIC,University,DegreeProgram)
+VALUES('10002','19982002123332','NSBM','Software_Engineering'),
+('10004','12643799876549','SLIIT','Cyber_Security')
+SELECT * FROM Undergraduate
+INSERT INTO Postgraduate(IDCode,Nic,University,ResearchType)
+('10003','7895641769746','AAT','Bachelors in Computing),
+('10008','56792508593752','NSBM','Business Managment','Business Prototypes'),
+SELECT * FROM Postgraduate
+INSERT INTO Kindergarden(IDCode,KindergardenName)
+VALUES('10007','Apollo Kindergarden'),
+('10010','Growth Trees Kindergarden')
+SELECT * FROM Kindergarden
+INSERT INTO Others(IDCode,NIC,Occupation)
+VALUES('10009','28761976371826',Engineer),
+('10005','183671826152781',Businessman)
+SELECT * FROM Others
+
+
+INSERT INTO Copy(CNo,Price,CISBNNo)    (**I don't know whether this is correct)
+VALUES('20001','8000','40001'),
+('20002',5000,'40002'),
+('20003',10000,'40003'),
+('20004',10500,'40004'),
+('20005',9000,'40005'),
+('20006',15000,'40006'),
+('20007',2000,'40007'),
+('20008',1900,'40008'),
+('20009',100000,'40009'),
+('20010',1000,'40010'),
+SELECT * FROM Copy
+
+INSERT INTO CopyLocation(CNo,Location)
+VALUES('20001','Homagama'),
+('20002','Colombo'),
+('20003','Dehiwale'),
+('20004','Matale'),
+('20005','Kandy'),
+('20006','Nuwaraeliya'),
+('20007','Hatton'),
+('20008','Katunayke'),
+('20009','Ampara),
+('20010','Kandy')
+SELECT * FROM CopyLocation
+
+INSERT INTO HasRelationship(LNo,EmpID,CNo,BISBNNo)
+VALUES('001','100','20001','100234'),
+('002','101','20002','100214'),
+('003','102','20003','100562',),
+('004','103','20004','100764',),
+('005','104','20005','105679',),
+('006','105','20006','234686',),
+('007','106','20007','456798',),
+('008','107','20008','451900',),
+('009','108','20009','234576',),
+('010','109','20010','789764',)
+SELECT * FROM HasRelationship
+
+INSERT INTO BorrowRelationship(BISBNNo,IDCode,CNo,ReturnDate,DueDate,IssueDate)
+VALUES('100234','10001','20001','NULL','NULL','NUll'),
+('100214','10002','20002','NULL','NULL','NUll'),
+('100562','10003','20003','NULL','NULL','NUll'),
+('100764','10004','20004','NULL','NULL','NUll'),
+('105679','10005','20005','NULL','NULL','NUll'),
+('234686','10006','20006','NULL','NULL','NUll'),
+('456798','10007','20007','NULL','NULL','NUll'),
+('451900','10008','20008','NULL','NULL','NUll'),
+('234576','10009','20009','NULL','NULL','NUll'),
+('789764','10010','20010','NULL','NULL','NUll'),

@@ -1,0 +1,72 @@
+
+
+
+
+
+INSERT INTO Academic
+VALUES ('100265345','Wattala Lyceum','nsbm','nibm'),
+('102634332','Asian','Polytechnic','SLITT'),
+('1026234','Wattala Nugegoda','NSBM','Stanford'),
+('1092653','Melbourne technology','Royal College','Cleaveland')
+SELECT * FROM Academic
+
+
+
+
+INSERT INTO Archivists
+VALUES('102987','My name is Fernando, I am experienced in maths'),
+('1025362','My name is Rishan, I am not expereineced in bio'),
+('1092763','I am Savina, I have a major in law'),
+('1022534','I am tim, Curenttly studying business'),
+('1036527','I am ready to be a part of this team'),
+('10025346','Live happily'),
+('1028465','Reminder to be beautiful'),
+('10274567','change lifestyle to understand'),
+('10354268','I am Dorothy, proud to be an archivist'),
+('567811','I might be late but i am here')
+SELECT * FROM Archivists
+
+INSERT INTO Assistant
+VALUES('100001','Prepared for any situation'),
+('100002','I have a fast typing speed'),
+('100003','Happy to be included and help anyone'),
+('100004','Efficency,Eficency'),
+('100005','-'),
+('100006','Might even bring a coffee for you!'),
+('100007','Help anybody and keep helping'),
+('100008','-'),
+('100009','Will be there when needed at all times'),
+('100010','Mjors in arts, can handle any situation')
+SELECT * FROM Assistant
+
+INSERT INTO Publisher
+VALUES('0001','Azhar','Ampara'),
+('002','Shikari','Homagama'),
+('003','Irusha','Talavathugoda'),
+('004','Shanuka','Colombo'),
+('005','Santhosh','Trincomolee'),
+('006','Sachini','Haton'),
+('007','Nirvana','Matale'),
+('008','Nilhan','Homagama'),
+('009','Pavithra','Kandy'),
+('010','Nethma','Talvathugoda')
+SELECT * FROM Publisher
+GO
+
+INSERT INTO Book(BISBNNo,Availability,BName,Author,BPrice,Title,Year,PublisherID)
+VALUES('120000','','To Kill a Mockinbird','Harper Lee','2000','To Kill a mockingbird','','0001'),
+('120001','','Just me','Jojo Moyes','1750','Just me','','002'),
+('120002','','The Great Gatsby','Scott Fitzgerald','2000','The Great Gatsby','','003'),
+('120003','','Moby Dick','Herman Melville','2500','Moby Dick','','004'),
+('120004','','Invisible Man','Ralph Ellision','2500','Invisible Man','','005'),
+('120005','','Beloved','Toni Morrison','2000','Beloved','','006'),
+('120006','','Lolita','Vladmir Nabokov','3000','Lolita','','007'),
+('120007','','Jane Eyre','Charlotte Brontë','2300','Jane Eyre','','008'),
+('120008','','Pride and Prejudice','Jane Austen','2700','Pride and Prejudice','','009'),
+('120009','','Odyssey','Homer','4000','Homer','','010')
+SELECT * FROM Book
+
+
+INSERT INTO Clerk
+VALUES ('13000','Major in communications'),
+('13001',''
