@@ -128,43 +128,52 @@ VALUES('100234',0,'To Kill a mockingbird','Harper Lee','2300','To Kill a mocking
 ('789764,'The Divine Comedy','Dante Alighieri','The Divine Comedy','309')
 SELECT * FROM Book
 
-INSERT INTO Memeber(IDCode,Address,ExpDate,Gender,Name,ContactNo,MemebrDate)
-VALUES('10001','','NULL','Female','Ariana','0777456790','NULL'),
-('10002','','NULL','Male','Dilan','0768926715','NULL'),
-('10003','','NULL','Male','Ajith','0777451826','NULL'),
-('10004','NULL','NULL','Female','Disney','07126359810','NULL'),
-('10005','','NULL','Female','Sheila','07126355410','NULL'),
-('10006','','NULL','Male','Malindu','07126323310','NULL'),
-('10007','NULL','NULL','Female','Shamima','0777259810','NULL'),
-('10008','','NULL','Female','Liza','0715278810','NULL'),
-('10009','NULL','NULL','Male','Donald','06421959810','NULL'),
-('10010','NULL','NULL','Female','Danthe','0777787610','NULL')
-SELECT * FROM Member
+INSERT INTO memeber(idcode,address,expdate,gender,name,contactno,memebrdate)
+VALUES
+('10001','Colombo','','Female','Ariana','0777456790',''),
+('10002','Wattale','','Male','Dilan','0768926715',''),
+('10003','Kandy','','Male','Ajith','0777451826',''),
+('10004','Homagama','','Female','Disney','07126359810',''),
+('10005','Colombo','','Female','Sheila','07126355410',''),
+('10006','Maharagama','','Male','Malindu','07126323310',''),
+('10007','Colombo','','Female','Shamima','0777259810',''),
+('10008','Awisawalla','','Female','Liza','0715278810',''),
+('10009','Colombo','','Male','Donald','06421959810',''),
+('10010','Wattale','','Female','Danthe','0777787610','')
+SELECT * FROM member
 
 
-INSERT INTO Student(IDCode,School)
+INSERT INTO student(idcode,school)
 VALUES('10001','Lyceum International'),
 ('10006','Royal College')
-SELECT * FROM Student
-INSERT INTO Undergraduate(IDCode,NIC,University,DegreeProgram)
+SELECT * FROM student
+
+
+INSERT INTO undergraduate(idcode,nic,university,degreeprogram)
 VALUES('10002','19982002123332','NSBM','Software_Engineering'),
 ('10004','12643799876549','SLIIT','Cyber_Security')
-SELECT * FROM Undergraduate
-INSERT INTO Postgraduate(IDCode,Nic,University,ResearchType)
-('10003','7895641769746','AAT','Bachelors in Computing),
-('10008','56792508593752','NSBM','Business Managment','Business Prototypes'),
-SELECT * FROM Postgraduate
-INSERT INTO Kindergarden(IDCode,KindergardenName)
+SELECT * FROM undergraduate
+
+
+INSERT INTO postgraduate(idcode,nic,university,researchtype)
+('10003','789564176','AAT','Bachelors in Computing),
+('10008','2508593752','NSBM','Business Managment','Business Prototypes'),
+SELECT * FROM postgraduate
+
+
+INSERT INTO kindergarden(idcode,name)
 VALUES('10007','Apollo Kindergarden'),
 ('10010','Growth Trees Kindergarden')
-SELECT * FROM Kindergarden
-INSERT INTO Others(IDCode,NIC,Occupation)
-VALUES('10009','28761976371826',Engineer),
-('10005','183671826152781',Businessman)
-SELECT * FROM Others
+SELECT * FROM kindergarden
 
 
-INSERT INTO Copy(CNo,Price,CISBNNo)    (**I don't know whether this is correct)
+INSERT INTO others(idcode,nic,occupation)
+VALUES('10009','1976371826',Engineer),
+('10005','1836718261',Businessman)
+SELECT * FROM others
+
+
+INSERT INTO copy(cno,price,cisbnno)
 VALUES('20001','8000','40001'),
 ('20002',5000,'40002'),
 ('20003',10000,'40003'),
@@ -175,9 +184,9 @@ VALUES('20001','8000','40001'),
 ('20008',1900,'40008'),
 ('20009',100000,'40009'),
 ('20010',1000,'40010'),
-SELECT * FROM Copy
+SELECT * FROM copy
 
-INSERT INTO CopyLocation(CNo,Location)
+INSERT INTO copylocation(cno,location)
 VALUES('20001','Homagama'),
 ('20002','Colombo'),
 ('20003','Dehiwale'),
@@ -188,29 +197,20 @@ VALUES('20001','Homagama'),
 ('20008','Katunayke'),
 ('20009','Ampara),
 ('20010','Kandy')
-SELECT * FROM CopyLocation
+SELECT * FROM copylocation
 
-INSERT INTO HasRelationship(LNo,EmpID,CNo,BISBNNo)
-VALUES('001','100','20001','100234'),
-('002','101','20002','100214'),
-('003','102','20003','100562',),
-('004','103','20004','100764',),
-('005','104','20005','105679',),
-('006','105','20006','234686',),
-('007','106','20007','456798',),
-('008','107','20008','451900',),
-('009','108','20009','234576',),
-('010','109','20010','789764',)
-SELECT * FROM HasRelationship
+ 
 
-INSERT INTO BorrowRelationship(BISBNNo,IDCode,CNo,ReturnDate,DueDate,IssueDate)
-VALUES('100234','10001','20001','NULL','NULL','NUll'),
-('100214','10002','20002','NULL','NULL','NUll'),
-('100562','10003','20003','NULL','NULL','NUll'),
-('100764','10004','20004','NULL','NULL','NUll'),
-('105679','10005','20005','NULL','NULL','NUll'),
-('234686','10006','20006','NULL','NULL','NUll'),
-('456798','10007','20007','NULL','NULL','NUll'),
-('451900','10008','20008','NULL','NULL','NUll'),
-('234576','10009','20009','NULL','NULL','NUll'),
-('789764','10010','20010','NULL','NULL','NUll'),
+INSERT INTO borrow(bisbnnoo,idcodcnCNo,returndate,duedate,issuedate)
+VALUES
+('100234','10001','20001','20200320','20200320','20200312'),
+('100214','10002','20002','20200429','20200428','20200421'),
+('100562','10003','20003','20200524','20200522','20200514'),
+('100764','10004','20004','20200707','20200707','20200627'),
+('105679','10005','20005','20200808','20200807','20200729'),
+('234686','10006','20006','20200603','20200206','20200129'),
+('456798','10007','20007','20200312','20200313','20200306'),
+('451900','10008','20008','20200818','20200818','20200810'),
+('234576','10009','20009','20200906','20200910','20200902'),
+('789764','10010','20010','20201202','20201210','20201202')
+select * from borrow
