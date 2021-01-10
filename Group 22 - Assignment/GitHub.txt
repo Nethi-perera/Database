@@ -1,0 +1,7 @@
+HTTPS
+https://github.com/Nethi-perera/Database.git
+
+
+
+GitHub CLI
+gh repo clone Nethi-perera/Database

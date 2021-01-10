@@ -1,0 +1,172 @@
+﻿Msg 1801, Level 16, State 3, Line 4
+Database 'LibrarySystem1' already exists. Choose a different database name.
+Msg 2714, Level 16, State 6, Line 90
+There is already an object named 'Academic' in the database.
+Msg 2714, Level 16, State 6, Line 106
+There is already an object named 'Archivists' in the database.
+Msg 2714, Level 16, State 6, Line 120
+There is already an object named 'Assistant' in the database.
+Msg 2714, Level 16, State 6, Line 134
+There is already an object named 'Book' in the database.
+Msg 2714, Level 16, State 6, Line 154
+There is already an object named 'BorrowRelationship' in the database.
+Msg 2714, Level 16, State 6, Line 174
+There is already an object named 'Clerk' in the database.
+Msg 2714, Level 16, State 6, Line 188
+There is already an object named 'Copy' in the database.
+Msg 2714, Level 16, State 6, Line 203
+There is already an object named 'CopyLocation' in the database.
+Msg 2714, Level 16, State 6, Line 217
+There is already an object named 'Director' in the database.
+Msg 2714, Level 16, State 6, Line 231
+There is already an object named 'Employee' in the database.
+Msg 2714, Level 16, State 6, Line 250
+There is already an object named 'EmployeeQualification' in the database.
+Msg 2714, Level 16, State 6, Line 264
+There is already an object named 'HasRelationship' in the database.
+Msg 2714, Level 16, State 6, Line 283
+There is already an object named 'Kindergarten' in the database.
+Msg 2714, Level 16, State 6, Line 297
+There is already an object named 'Librarian' in the database.
+Msg 2714, Level 16, State 6, Line 311
+There is already an object named 'Library' in the database.
+Msg 2714, Level 16, State 6, Line 325
+There is already an object named 'LibraryAid' in the database.
+Msg 2714, Level 16, State 6, Line 339
+There is already an object named 'LibraryLocation' in the database.
+Msg 2714, Level 16, State 6, Line 353
+There is already an object named 'MediaSpecialist' in the database.
+Msg 2714, Level 16, State 6, Line 367
+There is already an object named 'MedicalLibrarian' in the database.
+Msg 2714, Level 16, State 6, Line 381
+There is already an object named 'Member' in the database.
+Msg 2714, Level 16, State 6, Line 400
+There is already an object named 'Others' in the database.
+Msg 2714, Level 16, State 6, Line 415
+There is already an object named 'Postgraduate' in the database.
+Msg 2714, Level 16, State 6, Line 431
+There is already an object named 'Public' in the database.
+Msg 2714, Level 16, State 6, Line 445
+There is already an object named 'Publisher' in the database.
+Msg 2714, Level 16, State 6, Line 460
+There is already an object named 'Special' in the database.
+Msg 2714, Level 16, State 6, Line 474
+There is already an object named 'Student' in the database.
+Msg 2714, Level 16, State 6, Line 488
+There is already an object named 'Technician' in the database.
+Msg 2714, Level 16, State 6, Line 502
+There is already an object named 'Undergraduate' in the database.
+Msg 2714, Level 16, State 5, Line 513
+There is already an object named 'FK_Book_Publisher' in the database.
+Msg 1750, Level 16, State 1, Line 513
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 518
+There is already an object named 'FK_BorrowRelationship_Book' in the database.
+Msg 1750, Level 16, State 1, Line 518
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 523
+There is already an object named 'FK_BorrowRelationship_Copy' in the database.
+Msg 1750, Level 16, State 1, Line 523
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 528
+There is already an object named 'FK_BorrowRelationship_Member' in the database.
+Msg 1750, Level 16, State 1, Line 528
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 533
+There is already an object named 'FK_Copy_CopyLocation' in the database.
+Msg 1750, Level 16, State 1, Line 533
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 538
+There is already an object named 'FK_Employee_Archivists' in the database.
+Msg 1750, Level 16, State 1, Line 538
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 543
+There is already an object named 'FK_Employee_Assistant' in the database.
+Msg 1750, Level 16, State 1, Line 543
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 548
+There is already an object named 'FK_Employee_Clerk' in the database.
+Msg 1750, Level 16, State 1, Line 548
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 553
+There is already an object named 'FK_Employee_Director' in the database.
+Msg 1750, Level 16, State 1, Line 553
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 558
+There is already an object named 'FK_Employee_EmployeeQualification' in the database.
+Msg 1750, Level 16, State 1, Line 558
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 563
+There is already an object named 'FK_Employee_Librarian' in the database.
+Msg 1750, Level 16, State 1, Line 563
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 568
+There is already an object named 'FK_Employee_LibraryAid' in the database.
+Msg 1750, Level 16, State 1, Line 568
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 573
+There is already an object named 'FK_Employee_MediaSpecialist' in the database.
+Msg 1750, Level 16, State 1, Line 573
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 578
+There is already an object named 'FK_Employee_MedicalLibrarian' in the database.
+Msg 1750, Level 16, State 1, Line 578
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 583
+There is already an object named 'FK_Employee_Technician' in the database.
+Msg 1750, Level 16, State 1, Line 583
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 588
+There is already an object named 'FK_HasRelationship_Book' in the database.
+Msg 1750, Level 16, State 1, Line 588
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 593
+There is already an object named 'FK_HasRelationship_Copy' in the database.
+Msg 1750, Level 16, State 1, Line 593
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 598
+There is already an object named 'FK_HasRelationship_EmployeeQualification' in the database.
+Msg 1750, Level 16, State 1, Line 598
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 603
+There is already an object named 'FK_HasRelationship_Library' in the database.
+Msg 1750, Level 16, State 1, Line 603
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 608
+There is already an object named 'FK_Library_Academic' in the database.
+Msg 1750, Level 16, State 1, Line 608
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 613
+There is already an object named 'FK_Library_LibraryLocation' in the database.
+Msg 1750, Level 16, State 1, Line 613
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 618
+There is already an object named 'FK_Library_Public' in the database.
+Msg 1750, Level 16, State 1, Line 618
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 623
+There is already an object named 'FK_Library_Special' in the database.
+Msg 1750, Level 16, State 1, Line 623
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 628
+There is already an object named 'FK_Member_Kindergarten' in the database.
+Msg 1750, Level 16, State 1, Line 628
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 633
+There is already an object named 'FK_Member_Others' in the database.
+Msg 1750, Level 16, State 1, Line 633
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 638
+There is already an object named 'FK_Member_Postgraduate' in the database.
+Msg 1750, Level 16, State 1, Line 638
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 643
+There is already an object named 'FK_Member_Student' in the database.
+Msg 1750, Level 16, State 1, Line 643
+Could not create constraint or index. See previous errors.
+Msg 2714, Level 16, State 5, Line 648
+There is already an object named 'FK_Member_Undergraduate' in the database.
+Msg 1750, Level 16, State 1, Line 648
+Could not create constraint or index. See previous errors.
+
+Completion time: 2020-12-31T11:38:38.1203311+05:30
